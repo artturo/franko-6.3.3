@@ -830,8 +830,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 0.25 * COIN;
 
-    // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // franko: 840k blocks in ~4 years
+    // Subsidy is cut in half every 112358 blocks, which will occur approximately every 4 years
+    nSubsidy >>= (nHeight / 112358); // franko: 112358k blocks in ~4 years
 
     return nSubsidy + nFees;
 }
