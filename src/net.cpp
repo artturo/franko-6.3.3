@@ -1,7 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 Franko Developers
+// Copyright (c) 2011-2012 franko Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -27,7 +26,7 @@
 using namespace std;
 using namespace boost;
 
-static const int MAX_OUTBOUND_CONNECTIONS = 16;
+static const int MAX_OUTBOUND_CONNECTIONS = 8;
 
 void ThreadMessageHandler2(void* parg);
 void ThreadSocketHandler2(void* parg);
@@ -1062,7 +1061,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "Franko " + FormatFullVersion();
+        string strDesc = "franko " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1138,13 +1137,21 @@ void MapPort()
 #endif
 
 
+
+
+
+
+
+
+
 // DNS seeds
 // Each pair gives a source name and a seed name.
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"Franko.com", "dnsseed.Franko.com"},
-    {"altcointech.net", "dnsseed.fc.altcointech.net"},
+    {"frankopool.org", "dnsseed.frankopool.org"},
+    {"bytesized-vps.com", "dnsseed.bytesized-vps.com"},
+    {"xurious.com", "dnsseed.FRK.xurious.com"},
 };
 
 void ThreadDNSAddressSeed(void* parg)
@@ -1214,7 +1221,11 @@ void ThreadDNSAddressSeed2(void* parg)
 
 
 
-unsigned int pnSeed[] = {};
+
+unsigned int pnSeed[] =
+{
+    0x2EFDCB71, 0xCC1B3AD6, 0xADA77149,
+};
 
 void DumpAddresses()
 {
@@ -1716,7 +1727,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Franko is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. franko is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());
