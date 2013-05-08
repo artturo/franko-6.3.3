@@ -1,4 +1,4 @@
-₣ranko - a high value cryptocurrency with 30 second block times forked from the Litecoin clone FeatherCoin. Uses modified scrypt for proof of work.
+₣ranko - a high value cryptocurrency with 30 second block times forked from Litecoin. ₣ranko uses scrypt for proof of work.
 
 GET INVOLVED
 ===================
@@ -8,21 +8,14 @@ Freenode    - http://webchat.freenode.net/?channels=#Franko
 ABOUT ₣ranko
 ===================
  - 0.5 minute block targets
- - subsidy halves every 4 years // thinking about 2
- - 0.5 coins per block // making 1 coin per minute resulting in 1440 coins per day
- - 1 month mining incentive with double the block reward resulting in 2 coins per minute.
- - 2016 blocks to retarget difficulty // every 1.4 days
- - modified scrypt to increase memory usage //may make this scaleable to compete with moores law. aka 18 months
- - total coins 11,235,813
+ - subsidy halves every 112358 blocks
+ - 0.25 coins per block // which is 1/5th the block reward per ten minutes as bitcoin
+ - difficulty retargets roughly every four hours
+ - total coins 11,235,813 // which is less then half of Bitcoin total
 
-TODOLIST
+In development
 ===================
-- Genisis Block needs to be created.
-- Binaries need built.
-- Needs to be added to CopiaMarket
-- Mining guides and Gui Miners need forked
-- Pool scripts need forked
-- Infastructure needs worked on
+ - CopiaMarket : Surface web free market with public and private listings. Will accept only crypto currencies.
 
 Development process
 ===================
