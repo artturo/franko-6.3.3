@@ -22,7 +22,7 @@ namespace Checkpoints
     //    timestamp before)
     // + Contains no strange transactions
     // Will add checkpoints after the first block is mined.
-    static MapCheckpoints mapCheckpoints =;
+    static MapCheckpoints mapCheckpoints;
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
