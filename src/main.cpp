@@ -2010,7 +2010,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1368131337; //Your time zone: 5/9/2013
+        block.nTime    = 1317798646; //Your time zone: 5/9/2013
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 386984502;
 
