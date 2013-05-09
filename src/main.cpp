@@ -2004,13 +2004,13 @@ bool LoadBlockIndex(bool fAllowNew)
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0.25 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << 0x0 << OP_CHECKSIG; // The sacraficial transaction to the cryptogods 0x0
+        txNew.vout[0].scriptPubKey = CScript() << 0x0 << OP_CHECKSIG; // The sacraficial Franko to the cryptogod (0x0)
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1368141237; //Your time zone: 5/9/2013 7:13:57 PM GMT-4
+        block.nTime    = 1368131337; //Your time zone: 5/9/2013
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 0;
 
