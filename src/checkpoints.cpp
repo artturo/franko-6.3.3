@@ -22,7 +22,11 @@ namespace Checkpoints
     //    timestamp before)
     // + Contains no strange transactions
     // Will add checkpoints after the first block is mined.
-    static MapCheckpoints mapCheckpoints;
+
+    static MapCheckpoints mapCheckpoints =
+            boost::assign::map_list_of
+            ( 1, uint256("0xfdbe99b90c90bae7505796461471d89ae8388ab953997aa06a355bbda8d915cb"))
+            ;
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
