@@ -2012,7 +2012,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1368131337; //Your time zone: 5/9/2013
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 0;
+        block.nNonce   = 386984502;
 
         if (fTestNet)
         {
