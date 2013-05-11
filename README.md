@@ -2,6 +2,7 @@
 
 GET INVOLVED
 ===================
+Website     - http://Frankos.org
 Mailinglist - http://eepurl.com/yL05L
 Freenode    - http://webchat.freenode.net/?channels=#Franko
 
@@ -9,10 +10,13 @@ ABOUT ₣ranko
 ===================
  - 0.5 minute block targets
  - subsidy halves every 112358 blocks
- - 0.25 coins per block // which is 1/5th the block reward per ten minutes as bitcoin
+ - 0.25 coins per block // which is 1/5th the block reward per ten minutes of bitcoin
  - difficulty retargets roughly every four hours
  - total coins 11,235,813 // which is less then half of Bitcoin total
-
+ - testnet port 17912
+ - port 7912
+ - 
+ - 
 In development
 ===================
  - CopiaMarket : Surface web free market with public and private listings. Will accept only crypto currencies.
