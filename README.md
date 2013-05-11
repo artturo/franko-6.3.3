@@ -2,9 +2,9 @@
 
 GET INVOLVED
 ===================
-Website     - http://Frankos.org
-Mailinglist - http://eepurl.com/yL05L
-Freenode    - http://webchat.freenode.net/?channels=#Franko
+ - Website     - http://Frankos.org
+ - Mailinglist - http://eepurl.com/yL05L
+ - Freenode    - http://webchat.freenode.net/?channels=#Franko
 
 ABOUT ₣ranko
 ===================
@@ -15,8 +15,7 @@ ABOUT ₣ranko
  - total coins 11,235,813 // which is less then half of Bitcoin total
  - testnet port 17912
  - port 7912
- - 
- - 
+
 In development
 ===================
  - CopiaMarket : Surface web free market with public and private listings. Will accept only crypto currencies.
