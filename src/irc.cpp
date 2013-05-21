@@ -294,14 +294,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #frankoTEST3\r");
-            Send(hSocket, "WHO #frankoTEST3\r");
+            Send(hSocket, "JOIN #frankoORGTEST3\r");
+            Send(hSocket, "WHO #frankoORGTEST3\r");
         } else {
-            // randomly join #franko00-#franko99
+            // randomly join #frankoORG00-#frankoORG99
             int channel_number = GetRandInt(100);
             channel_number = 0; // franko: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #franko%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #franko%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("JOIN #frankoORG%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #frankoORG%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
