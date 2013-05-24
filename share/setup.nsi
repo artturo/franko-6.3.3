@@ -5,9 +5,9 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.6.3.1
+!define VERSION 0.6.3.3
 !define COMPANY "Franko"
-!define URL http://www.franko.bit/
+!define URL http://www.frankos.org/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"
